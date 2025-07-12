@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>FAQ | Vista Cinema</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='faq.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">Vista Cinema</h2>
+        <nav class="navigation">
+            <a href="home.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="movie.html">Movies</a>
+            <a href="contactus.php">Contact</a>
+            
+        </nav>
+    </header>
+
+    <br>
+    <br>
+
+    <section class="faq-section">
+        <h1 class="title">FREQUENTLY ASKED QUESTIONS</h1>
+
+        <ul class="faq">
+
+            <li>
+                <div class="q">
+                    <span class="arrow"></span> 
+                    <span>How do I book movie tickets?</span>
+                </div>
+                <div class="a">
+                    <p>
+                        You can book movie tickets online through our website or mobile app. Simply log in, choose your movie, select your showtime, and complete the booking.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="q">
+                    <span class="arrow"></span> 
+                    <span>Can I book tickets in advance?</span>
+                </div>
+                <div class="a">
+                    <p>
+                        Yes, you can pre-book your tickets in advance to ensure you have a seat for your preferred movie and showtime.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>How much does it cost to watch a movie?</span>
+                </div>
+                <div class="a">
+                    <p>
+                        The ticket price varies depending on factors such as movie type (standard or 3D/IMAX), day of the week, and time of the show. Prices are shown during the booking process.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Is there a VIP seating option?</span>
+                </div>
+                <div class="a">
+                    <p>
+                        Yes, we offer VIP seating with extra comfort, better views, and premium service. You can select VIP seats during the booking process.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Can I change or cancel my booking?</span>
+                </div>
+                <div class="a">
+                    <p>
+                        Yes, you can modify or cancel your booking before the movie starts. Any changes or cancellations will depend on the cinema's cancellation policy.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>What types of movies do you show?</span>
+                </div>
+                <div class="a">
+                    <p>
+                        We show a variety of movies including the latest blockbusters, independent films, and special screenings like 3D and IMAX.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>What is the age rating for movies?</span>
+                </div>
+                <div class="a">
+                    <p>
+                        Movies have various age ratings like G, PG, PG-13, R, and NC-17. Age ratings are displayed when you select a movie during booking.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Are there discounts for group bookings?</span>
+                </div>
+                <div class="a">
+                    <p>
+                        Yes, we offer group discounts for large bookings. You can inquire about group rates while booking or contact customer support for more details.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>What food and beverages are available?</span>
+                </div>
+                <div class="a">
+                    <p>
+                        Our cinema offers a wide selection of snacks, beverages, and gourmet food. You can buy popcorn, nachos, soft drinks, and more at the concession stand.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Do you offer 3D or IMAX screenings?</span>
+                </div>
+                <div class="a">
+                    <p>
+                        Yes, we offer 3D and IMAX screenings for select movies. Please check the movie listing to see if a film is available in these formats.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Is parking available at Vista Cinema?</span>
+                </div>
+                <div class="a">
+                    <p>
+                        Yes, there is ample parking available for moviegoers. We also offer a parking service for your convenience.
+                    </p>
+                </div>
+            </li>
+
+            <li>
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>How can I contact customer support?</span>
+                </div>
+                <div class="a">
+                    <p>
+                        Customer support is available 24/7. You can contact us via phone, email, or the contact form on our website for assistance.
+                    </p>
+                </div>
+            </li>
+
+        </ul>    
+    </section>
+
+    <script>
+        const q = document.querySelectorAll('.q');
+        const a = document.querySelectorAll('.a');
+        const arr = document.querySelectorAll('.arrow');
+
+        for (let i = 0; i < q.length; i++) {
+            q[i].addEventListener('click', () => {
+                a[i].classList.toggle('a-opened');
+                arr[i].classList.toggle('arrow-rotated');
+            });
+        }
+    </script>
+
+    <br>
+    <br>
+
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="f_container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Vista Cinema</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="contactus.php">Help Center</a></li>
+                        <li><a href="service.html">Service & Maintenance</a></li>
+                        <li><a href="poption.html">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="https://x.com/"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp'></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>contact@vistacinemas.com</li>
+                        <li>+9471235679</li>
+                        <li>1102/B,Bambala Pitiya, Colombo 03</li>
+                    </ul>
+                </div>
+            </div>
+        </div>   
+    </footer>
+
+</body>
+</html>

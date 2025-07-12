@@ -1,0 +1,195 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo h2 a {
+    text-decoration: none; /* Removes underline */
+    color: #fff; /* White color */
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.header .logo h2 a:hover {
+    color: #ccc; /* Optional: Change color on hover */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+#search-bar {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.icons i {
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card {
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Ensures text color remains consistent */
+    display: block; /* Makes the entire card clickable */
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.movie-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.movie-info p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #24262b; 
+    padding: 40px 20px; 
+    color: #ffffff; 
+}
+
+.f_container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.row {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.footer-col {
+    flex: 1; 
+    min-width: 200px; 
+    padding: 0 15px; 
+    margin-bottom: 20px; 
+}
+
+.footer-col h4 {
+    font-size: 20px; 
+    margin-bottom: 15px; 
+    font-weight: bold; 
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footer-col h4:hover::after {
+    width: 100px;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px; 
+    height: 2px; 
+    width: 0; 
+    background: white; 
+    transition: width 0.3s; 
+}
+
+.footer-col ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.footer-col ul li {
+    margin-bottom: 10px; 
+}
+
+.footer-col ul li a {
+    color: #bbbbbb; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff; 
+    padding-left: 8px;
+}
+
+.social-links {
+    display: flex; 
+}
+
+.social-links i {
+    font-size: 25px; 
+    color: #ffffff; 
+    margin-right: 15px; 
+    transition: color 0.3s; 
+}
+
+.social-links i:hover {
+    cursor: pointer;   
+    color: #0569ff;
+}
